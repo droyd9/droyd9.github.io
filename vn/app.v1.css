@@ -2418,6 +2418,16 @@ td {
         left: 0;
     }
 
+    .img {
+        visibility: hidden;
+        clear: both;
+        float: left;
+        margin: 10px auto 5px 20px;
+        width: 28%;
+        display: none;
+      }
+    }
+
     nav {
         max-height: calc(100% - 7rem);
         /* width: 220px !important; */
