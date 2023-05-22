@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: roboto;
-	src: url(../fonte/RobotoSlab-Regular.ttf);
+	src: url(../dist/fonts/fontawesome-webfont.ttf);
 }
 @font-face {
 	font-family: fredoka;
-	src: url(../fonte/FredokaOne-Regular.ttf);
+	src: url(../dist/fonts/Roboto-Thin.ttf);
 }
 
 body {
@@ -182,6 +182,15 @@ body {
 	color: rgb(70, 70, 70);
 	text-shadow: 2px 2px 0px rgb(245, 245, 245);
     font-weight: bold; 
+
+}
+
+.divProduto h3{
+	font-size: 2vw;
+	color: rgb(70, 70, 70);
+	text-shadow: 2px 2px 0px rgb(245, 245, 245);
+	font-style: italic; 
+	text-align: right;
 
 }
 
