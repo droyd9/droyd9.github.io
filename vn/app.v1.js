@@ -85,4 +85,42 @@ $(document).ready(function () {
             topbar.removeClass('active');
         }
     })
+
+    // Toggle Iframe src - Paulo - 25/05
+    $(document).on('click', '#mnEntrev', function () {
+        loadIframe("meuIframe", "./noticias/entrevistas.html");
+    });
+    $(document).on('click', '#mnEsp', function () {
+        loadIframe("meuIframe", "./noticias/esportes.html");
+    });
+    $(document).on('click', '#mnSal', function () {
+        loadIframe("meuIframe", "./noticias/saude.html");
+    });
+    $(document).on('click', '#mnEst', function () {
+        loadIframe("meuIframe", "./noticias/estudos.html");
+    });
+    $(document).on('click', '#mnSpe', function () {
+        loadIframe("meuIframe", "./noticias/especial.html");
+    });
+    $(document).on('click', '#mnCu', function () {
+        loadIframe("meuIframe", "./noticias/curiosidades.html");
+    });
+    $(document).on('click', '#mnTir', function () {
+        loadIframe("meuIframe", "./noticias/tirinhas.html");
+    });
+    $(document).on('click', '#mnFak', function () {
+        loadIframe("meuIframe", "./noticias/fake-news.html");
+    });
+
+
+
+    // Function loadIframe - Paulo - 25/05
+    function loadIframe(iframeName, url) {
+        var $iframe = $('#' + iframeName);
+        if ($iframe.length) {
+            $iframe.attr('src',url);
+            return false;
+        }
+        return true;
+    }
 })
