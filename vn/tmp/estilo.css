@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: roboto;
-	src: url(../dist/fonts/fontawesome-webfont.ttf);
+	src: url(../fonte/RobotoSlab-Regular.ttf);
 }
 @font-face {
 	font-family: fredoka;
-	src: url(../dist/fonts/Roboto-Thin.ttf);
+	src: url(../fonte/FredokaOne-Regular.ttf);
 }
 
 body {
@@ -54,6 +54,18 @@ body {
   .topnav a:hover {
 	background-color: #ddd;
 	color: black;
+  }
+  
+  .active {
+	width: 110px;
+	height: 23px;
+	margin-right: 2%;
+	background-image: url("../fotos/logo.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: rgb(37, 36, 36);
+	color: white;
   }
   
   .topnav .icon {
@@ -166,7 +178,7 @@ body {
 	align-self: stretch;
 	font-family: 'roboto', Arial, sans-serif;
 	line-height: 45px;
-	background-color: #E6E2C8;
+	background-color: rgb(250, 250, 250);
 }
 
 .divProduto {
@@ -178,19 +190,10 @@ body {
 }
 
 .divProduto h1, legend {
-	font-size: 5vw;
+	font-size: 30px;
 	color: rgb(70, 70, 70);
 	text-shadow: 2px 2px 0px rgb(245, 245, 245);
-    font-weight: bold; 
-
-}
-
-.divProduto h3{
-	font-size: 2vw;
-	color: rgb(70, 70, 70);
-	text-shadow: 2px 2px 0px rgb(245, 245, 245);
-	font-style: italic; 
-	text-align: right;
+	font-weight: bold;
 
 }
 
@@ -207,7 +210,7 @@ body {
 }
 
 .divProduto p, li, textarea, input {
-	font-size: 30px;
+	font-size: 20px;
 	color: rgb(70, 70, 70);
 	text-shadow: 2px 2px 0px rgb(245, 245, 245);
 	text-align: justify;
@@ -222,7 +225,7 @@ body {
 }
 
 
-@media only screen and ( max-width: 700px) {
+@media only screen and ( max-width: 1080px) {
 
 	.Bloco3 {
 		line-height: 90px;
@@ -280,6 +283,20 @@ body {
 .divLinkBlog a:hover {
 	animation: btn-animation 1s ease-out forwards;
 	color: rgb(180, 177, 177);
+}
+
+@media only screen and ( max-width: 1080px) {
+	.divLinkBlog h1, h2 {
+		font-size: 4.7vw;
+	}
+	
+	.divLinkBlog h1 {
+		font-size: 8vw;
+	}
+	
+	.divLinkBlog a {
+		font-size: 3.5vw;     
+	}
 }
 
 /*											Album de Fotos			 */

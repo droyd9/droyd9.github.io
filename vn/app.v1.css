@@ -1,12 +1,17 @@
 :root {
-    --color-info: rgba(51, 204, 204, 1);
+    --color-info: #E68879;
     --color-border: rgba(27, 31, 35, .15);
     --color-dark: rgba(62, 84, 104, 1);
-    --color-primary: rgba(51, 204, 204, 1);
-    --color-danger: rgba(255, 51, 51, 1);
-    --color-warning: rgba(255, 204, 0, 1);
+    --color-primary: #E13147;
+    --color-danger: #3B54A1;
+    --color-warning: #2B3D6D;
     --color-success: rgba(13, 205, 188, 1);
-    --color-purble: rgba(101, 121, 251, 01);
+    --color-purble: rgba(255, 51, 51, 1);
+}
+
+@font-face {
+    font-family: gothic;
+	src: url(./dist/fonts/LeagueGothic-Regular-VariableFont_wdth.ttf);
 }
 
 @-ms-viewport {
@@ -38,7 +43,7 @@ body {
     font-weight: normal;
     line-height: 1.5;
     color: #292b2c;
-    background-color: #fafafa;
+    background-color: #E6E2C8;
     box-sizing: border-box;
     min-height: calc(100% - 3.5rem);
     height: calc(100% - 3.5rem);
@@ -1860,7 +1865,7 @@ header {
     top: 0;
     height: 3.5rem;
     width: 100%;
-    background-color: #fafafa;
+    background-color: #e1dfeb;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1879,8 +1884,10 @@ header {
 }
 
 .logo-text {
+    color: #E6665B;
+    font-family: gothic;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 3rem;
     display: block;
 }
@@ -1906,7 +1913,7 @@ header {
     font-size: 1rem;
     font-weight: inherit;
     color: #fdfdfd;
-    background-color: rgba(51, 204, 204, 1);
+    background-color: #323176;
     line-height: inherit;
     border-bottom: 1px solid #ddd;
 }
@@ -1955,13 +1962,13 @@ header {
     color: inherit;
     font-size: inherit;
     padding: 0 1rem;
-    background-color: #19bfbf;
+    background-color: #323176;
     cursor: pointer;
 }
 
 .topbar-btn:hover,
 .navbar-collopse:hover {
-    background-color: #17b5b5;
+    background-color: #4D4DA0;
 }
 
 .topbar-btn .dropdown {
@@ -2026,7 +2033,7 @@ header {
     width: 50px;
     text-align: center;
     cursor: pointer;
-    background: #19bfbf;
+    background: #323176;
 }
 
 .topbar .topbar-title {
@@ -2055,7 +2062,7 @@ header {
 aside {
     position: relative;
     padding: 0;
-    background-color: #45586E;
+    background-color: #323854;
     color: #adbece;
     height: 100%;
     z-index: 100;
@@ -2107,12 +2114,12 @@ nav {
 }
 
 .nav li a:hover {
-    background: #374B5E;
+    background: #323854;
     color: #e0e0e0;
 }
 
 .nav li.active>a {
-    background: #3e5468;
+    background: #323854;
     color: #e0e0e0;
     font-weight: 450;
 }
