@@ -2425,6 +2425,20 @@ td {
         left: 0;
     }
 
+    .topbar .topbar-title {
+        visibility: hidden;
+    }
+
+    .topbar .topbar-title::after {
+        visibility: visible;
+        font-size: 1rem;
+        content: "Vianna News";
+        top: 0;
+        left: 0;
+        margin-left: 52px;
+        position: absolute;
+    }
+
     .img {
         visibility: hidden;
         clear: both;
@@ -2433,7 +2447,12 @@ td {
         width: 28%;
         display: none;
       }
+      .col-md-3{
+        display: none;
+        visibility: hidden;
+      }
     }
+
 
     nav {
         max-height: calc(100% - 7rem);
@@ -2454,6 +2473,5 @@ td {
         display: block;
         overflow-x: auto;
     }
-}
 
 /* Mobile  End*/
