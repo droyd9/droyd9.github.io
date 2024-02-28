@@ -1,2 +1,0 @@
-# FlatUI
-FlatUI admin template 
