@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("res/Roboto-Medium.ttf");
+}
+@keyframes hellyeah {
+    from {margin: 3%;}
+    to {margin-left: 5%;}
+  }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: "Roboto";
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    display: inline-block;
+}
+a:hover{
+    color: rgb(202, 138, 0);
+}
+h1{
+    font-size: 40px;
+    background-color: rgb(0, 89, 161);
+    width: 215px;
+}
+.cabeca{
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0 ;
+    background-color: rgb(0, 89, 161);
+    width: 100%;
+    height: 30px;
+    margin: 0px;
+    word-spacing: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+.cabeca:hover{
+    height: 50px;
+}
+.title{
+    float: left;
+}
+.contato{
+    float: right;
+}
+.txt{
+    margin-top: 3%;
+    margin-left: 1%;
+    text-align: left;
+    width: 600px;
+    float: left;
+    transition: 0.5s;
+}
+.txt:hover{
+    margin-left: 3%
+}
+.menuimg{
+    flex-grow: 1;
+    display: flex;
+    margin-top: 5px;
+    float: right;
+}
